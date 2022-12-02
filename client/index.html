@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  
+  <title>Crowd Sale</title>
+</head>
+<body>
+  <nav id="header" class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand">Token Sale</a>
+      <div id="account" class="d-flex"></div>
+    </div>
+  </nav>
+  <div class="container" style="width: 650px;">
+    <div class="row">
+      <div class="col-lg-12">
+          <h1 class="text-center">TOKEN ICO SALE</h1>
+          <hr/>
+          <br/>
+      </div>
+      <!-- <div id="loader">
+        <p class="text-center">Loading...</p>
+      </div> -->
+      <div id="content" class="text-center">
+        <p>
+          Introducing "<span class="token-name" id="token-name"> </span> Token" (<span class="token-symbol" id="token-symbol"> </span>)!
+          Token price is <span class="token-price" id = "token-price"></span>  Wei . You currently have <span class="vkp-balance" id="vkp-balance"></span> tokens &nbsp;.
+        </p>
+        <br/>
+        <form role="form">
+          <div class="form-group">
+            <div class="input-group">
+              <input id="number-of-tokens" class="form-control input-lg" type="number" name="number" value="10" min="1" pattern="[0-9]">
+              </input>
+              <span class="input-group-btn" padding="4">
+                
+              <button type="submit" class="btn btn-primary btn-lg" id="buy-tokens">Buy Tokens</button>
+              </span>
+            </div>
+          </div>
+        </form>
+        <br>
+         <!-- <div class="progress">
+            <div id="progress" class="progress-bar progress-bar-striped active" aria-valuemin="0" aria-valuemax="100">
+            </div> -->
+          </div>
+        <p><span class="tokens-sold" id = "tokens-sold"></span>
+          <br><span class="tokens-available" id="tokens-available"></span></p>
+        <hr>
+        <p id="accountAddress"></p>
+      </div>
+    </div>
+ 
+
+  </div>
+<script type= "module"src="index.js"></script>
+</body>
+</html>
